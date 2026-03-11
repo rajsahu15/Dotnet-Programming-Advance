@@ -1,0 +1,13 @@
+use PracticeModule;
+
+
+CREATE PROCEDURE countEmployeesDept
+    @DEPARTMENT_ID SMALLINT
+AS
+BEGIN
+    SELECT COUNT(*) AS TotalEmployees
+    FROM EMPLOYEES
+    WHERE DEPARTMENT_ID = @DEPARTMENT_ID;
+END;
+
+EXEC countEmployeesDept 90;
