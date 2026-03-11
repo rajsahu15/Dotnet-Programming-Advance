@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Advanced Showcase</title>
+
+    <link rel="stylesheet" href="css/style2.css">
+
+ 
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- SVG Logo -->
+    <div class="card">
+        <h2>SVG Logo Design</h2>
+        <div class="svg-box">
+            <svg viewBox="0 0 300 200">
+
+                <defs>
+                    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#b11226"/>
+                        <stop offset="100%" stop-color="#ff4d6d"/>
+                    </linearGradient>
+                </defs>
+
+                <circle cx="150" cy="100" r="80" fill="url(#logoGrad)" />
+                <text x="150" y="110" text-anchor="middle"
+                      font-size="40" fill="white" font-weight="bold">
+                    R
+                </text>
+
+            </svg>
+        </div>
+    </div>
+
+    <!-- SVG Icons -->
+    <div class="card">
+        <h2>Modern UI Icons</h2>
+
+        <svg class="icon" viewBox="0 0 24 24">
+            <path fill="#b11226" 
+                d="M12 2L2 7l10 5 10-5-10-5zm0 7l-10 5 10 5 10-5-10-5z"/>
+        </svg>
+
+        <svg class="icon" viewBox="0 0 24 24">
+            <path fill="#b11226"
+                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 
+                2 6 4 4 6.5 4c1.74 0 3.41 1 4.22 2.44
+                C11.09 5 12.76 4 14.5 4
+                17 4 19 6 19 8.5c0 3.78-3.4 6.86-8.55 
+                11.54L12 21.35z"/>
+        </svg>
+    </div>
+
+    <!-- Animated Chart -->
+    <div class="card">
+        <h2>Animated Bar Chart</h2>
+
+        <svg viewBox="0 0 400 200">
+
+            <rect x="50" y="100" width="40" height="80" fill="#b11226">
+                <animate attributeName="height" from="0" to="80"
+                         dur="1s" fill="freeze"/>
+                <animate attributeName="y" from="180" to="100"
+                         dur="1s" fill="freeze"/>
+            </rect>
+
+            <rect x="150" y="70" width="40" height="110" fill="#ff4d6d">
+                <animate attributeName="height" from="0" to="110"
+                         dur="1.2s" fill="freeze"/>
+                <animate attributeName="y" from="180" to="70"
+                         dur="1.2s" fill="freeze"/>
+            </rect>
+
+            <rect x="250" y="40" width="40" height="140" fill="#ff758f">
+                <animate attributeName="height" from="0" to="140"
+                         dur="1.5s" fill="freeze"/>
+                <animate attributeName="y" from="180" to="40"
+                         dur="1.5s" fill="freeze"/>
+            </rect>
+
+        </svg>
+    </div>
+
+    <!-- Dashboard UI -->
+    <div class="card">
+        <h2>Mini SVG Dashboard</h2>
+
+        <svg viewBox="0 0 400 200">
+
+            <rect x="20" y="30" width="120" height="80"
+                  fill="#b11226" rx="10"/>
+            <text x="80" y="75" text-anchor="middle"
+                  class="dashboard-text">Users: 1200</text>
+
+            <rect x="160" y="30" width="120" height="80"
+                  fill="#ff4d6d" rx="10"/>
+            <text x="220" y="75" text-anchor="middle"
+                  class="dashboard-text">Balance: 530</text>
+
+            <rect x="300" y="30" width="80" height="80"
+                  fill="#ff758f" rx="10"/>
+            <text x="340" y="75" text-anchor="middle"
+                  class="dashboard-text">🔥</text>
+
+        </svg>
+    </div>
+
+    <!-- Responsive Illustration -->
+    <div class="card">
+        <h2>Responsive Illustration</h2>
+
+        <svg viewBox="0 0 300 200">
+
+            <defs>
+                <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#1c1c1c"/>
+                    <stop offset="100%" stop-color="#000"/>
+                </linearGradient>
+            </defs>
+
+            <rect width="300" height="200" fill="url(#sky)" />
+            <circle cx="250" cy="50" r="30" fill="#ff4d6d"/>
+            <polygon points="0,200 100,100 200,200"
+                     fill="#b11226"/>
+            <polygon points="100,200 200,80 300,200"
+                     fill="#ff758f"/>
+
+        </svg>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Background - Dark Warrior Theme */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #0f0f0f, #1c1c1c);
+    color: #e0e0e0;
+    padding: 40px;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Main Heading */
+h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #b11226;   /* Deep Red */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Card Sections */
+.card {
+    background-color: #222; /* Dark Grey */
+    margin-bottom: 40px;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #333;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.7);
+    transition: 0.3s ease;
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 15px 35px rgba(177, 18, 38, 0.6);
+}
+
+/* Section Headings */
+.card h2 {
+    margin-bottom: 20px;
+    color: #b11226;  /* Red Accent */
+}
+
+/* Images */
+img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    border: 2px solid #b11226;
+}
+  .svg-box {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        svg {
+            width: 100%;
+            height: auto;
+        }
+
+        .icon {
+            width: 60px;
+            height: 60px;
+            margin: 15px;
+            transition: 0.3s ease;
+        }
+
+        .icon:hover {
+            transform: scale(1.2);
+        }
+
+        .dashboard-text {
+            fill: #fff;
+            font-size: 14px;
+            font-family: Arial;
+        }
+
